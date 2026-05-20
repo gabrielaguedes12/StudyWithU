@@ -38,5 +38,6 @@ __screenshots__/
 # Vite
 *.timestamp-*-*.mjs
 
-backend/.env
-frontend/.env
+# Variáveis de ambiente — NUNCA subir!
+.env
+**/.env
