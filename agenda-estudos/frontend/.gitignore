@@ -37,3 +37,8 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+.env/
+DB_SERVER=GABRIELA_GUEDES
+DB_NAME=agenda_estudos
+DB_DRIVER=ODBC Driver 17 for SQL Server
