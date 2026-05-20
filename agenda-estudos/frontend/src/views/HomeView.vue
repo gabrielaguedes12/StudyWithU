@@ -12,6 +12,7 @@
             <i class="pi pi-book"></i>
             <h3>Matérias</h3>
             <p>Cadastre e organize suas matérias</p>
+            <p>Cadastre e organize suas matérias</p>
         </div>
 
         <div class="card">
