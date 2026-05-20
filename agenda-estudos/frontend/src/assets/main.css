@@ -17,7 +17,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-   color: var(--text-light);
+  color: var(--text-light);
   min-height: 100vh;
   background-image: url('https://images.pexels.com/photos/8823485/pexels-photo-8823485.jpeg?_gl=1*1dw4rs4*_ga*MTIxMzYwNjg4My4xNzc5Mjk1NzI5*_ga_8JE65Q40S6*czE3NzkyOTU3MjgkbzEkZzEkdDE3NzkyOTYwNDkkajUyJGwwJGgw');
   background-size: cover;

@@ -19,13 +19,20 @@
 
 <style>
 nav {
-  background: var(--color2);
-  padding: 1rem 2rem;
+  max-width: 1000px;
+  margin:auto;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid var(--color1);
-  border-radius: 12px;
+  align-items: center;
+
+  padding: 1.2rem 2rem;
+  border-radius: 25px;
+  margin-bottom: 60px; 
+  margin-top: 20px;
+  background: var(--color2);
+  box-shadow: 8px 8px 0px var(--color4);
+  border-bottom: 3px solid var(--color1);
 }
 
 .logo {
