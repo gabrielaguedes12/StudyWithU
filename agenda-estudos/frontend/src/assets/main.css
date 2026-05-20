@@ -1,0 +1,26 @@
+:root{
+  --color1:#791a78;
+  --color2:#5b145a;
+  --color3:#3c0d3c;
+  --color4:#1e071e;
+  --color5:#000000;
+
+  --text-light:#f5e6f5;
+  --text-muted: #c9a8c9;  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+   color: var(--text-light);
+  min-height: 100vh;
+  background-image: url('https://images.pexels.com/photos/8823485/pexels-photo-8823485.jpeg?_gl=1*1dw4rs4*_ga*MTIxMzYwNjg4My4xNzc5Mjk1NzI5*_ga_8JE65Q40S6*czE3NzkyOTU3MjgkbzEkZzEkdDE3NzkyOTYwNDkkajUyJGwwJGgw');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
