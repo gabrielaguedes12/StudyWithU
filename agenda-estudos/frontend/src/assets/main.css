@@ -16,6 +16,20 @@
   padding: 0;
 }
 
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+  background:
+    radial-gradient(1.5px 1.5px at 20% 30%, #ffffffaa, transparent),
+    radial-gradient(1px 1px at 70% 20%, #ffffff88, transparent),
+    radial-gradient(1.5px 1.5px at 40% 80%, #ffffff77, transparent),
+    radial-gradient(1px 1px at 85% 65%, #ffffff99, transparent),
+    radial-gradient(1200px 600px at 50% -10%, #1d2f66 0%, transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  background-attachment: fixed;
+}
+
 h1, h2, h3 { letter-spacing: -0.02em; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; }
 p { color: var(--muted); line-height: 1.6; }
