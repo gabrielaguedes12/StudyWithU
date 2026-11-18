@@ -33,3 +33,16 @@ body {
 h1, h2, h3 { letter-spacing: -0.02em; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; }
 p { color: var(--muted); line-height: 1.6; }
+
+nav, header {
+  background: rgba(22, 31, 58, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.9rem 1.5rem;
+  max-width: 1000px;
+  margin: 1.2rem auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+nav a { color: var(--muted); text-decoration: none; margin-left: 1.4rem; transition: color .2s; }
+nav a:hover, nav a.router-link-exact-active { color: var(--text); }
