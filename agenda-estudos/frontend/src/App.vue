@@ -1,60 +1,49 @@
 <script setup>
+import { computed } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const links = [
+  { to: '/', label: 'Início', icon: 'pi-home' },
+  { to: '/materias', label: 'Matérias', icon: 'pi-book' },
+  { to: '/sessoes', label: 'Sessões', icon: 'pi-clock' },
+  { to: '/metas', label: 'Metas', icon: 'pi-lightbulb' },
+  { to: '/dashboard', label: 'Dashboard', icon: 'pi-chart-bar' },
+]
+
+const titulo = computed(
+  () => links.find((l) => l.to === route.path)?.label ?? 'StudyWithU'
+)
 </script>
 
 <template>
-  <div>
-    <nav>
-      <span class="logo">Study With U</span>
-      <div class="links">
-      <RouterLink to="/">Início</RouterLink>
-      <RouterLink to="/materias">Matérias</RouterLink>
-      <RouterLink to="/sessoes">Sessões</RouterLink>
-      <RouterLink to="/metas">Metas</RouterLink>
-      <RouterLink to="/dashboard">Dashboard</RouterLink>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="pi pi-graduation-cap"></i>
+        <h1>StudyWithU</h1>
+        <small>Agenda de estudos</small>
+      </div>
+
+      <nav class="menu">
+        <RouterLink v-for="l in links" :key="l.to" :to="l.to" class="menu-item">
+          <i :class="['pi', l.icon]"></i>
+          {{ l.label }}
+        </RouterLink>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <h2>{{ titulo }}</h2>
+      </header>
+
+      <main class="page">
+        <RouterView />
+      </main>
+
+      <footer class="footer">© 2026 StudyWithU · Feito com 🤎 para estudantes</footer>
     </div>
-    </nav>
-    <RouterView />
   </div>
 </template>
-
-<style>
-nav {
-  max-width: 1000px;
-  margin:auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1.2rem 2rem;
-  border-radius: 25px;
-  margin-bottom: 60px; 
-  margin-top: 20px;
-  background: var(--color2);
-  box-shadow: 8px 8px 0px var(--color4);
-  border-bottom: 3px solid var(--color1);
-}
-
-.logo {
-  color: var(--text-light);
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.links {
-  display: flex;
-  gap: 2rem;
-}
-
-.links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.links a:hover,
-.links a.router-link-active {
-  color: var(--text-light);
-}
-</style>

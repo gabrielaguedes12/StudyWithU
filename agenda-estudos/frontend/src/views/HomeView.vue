@@ -1,118 +1,96 @@
 <template>
-    <div class="home">
-        <div class="hero">
-            <h1>Agenda de Estudos</h1>
-            <p>Organize seus estudos de forma simples e eficiente.</p>
-            <RouterLink to="/materias" class="btn">Ver Matérias</RouterLink>
-        </div>
-    </div>
+  <div class="home">
+    <section class="hero">
+      <h1>Agenda de Estudos</h1>
+      <p>Organize seus estudos de forma simples e eficiente.</p>
+      <RouterLink to="/materias" class="btn">Ver Matérias</RouterLink>
+    </section>
 
-    <div class="cards">
-        <div class="card">
-            <i class="pi pi-book"></i>
-            <h3>Matérias</h3>
-            <p>Cadastre e organize suas matérias</p>
-        </div>
+    <section class="cards">
+      <RouterLink v-for="f in features" :key="f.title" :to="f.to" class="card feature">
+        <div class="icon-box"><i :class="['pi', f.icon]"></i></div>
+        <h3>{{ f.title }}</h3>
+        <p>{{ f.text }}</p>
+      </RouterLink>
+    </section>
 
-        <div class="card">
-            <i class="pi pi-clock"></i>
-            <h3>Sessões</h3>
-            <p>Registre seu tempo de estudo</p>
-        </div>
-
-        <div class="card">
-            <i class="pi pi-lightbulb"></i>
-            <h3>Metas</h3>
-            <p>Defina e acompanhe seus objetivos</p>
-        </div>
-
-        <div class="card">
-            <i class="pi pi-chart-bar"></i>
-            <h3>Dashboard</h3>
-            <p>Visualize seu progresso semanal</p>
-        </div>
-    </div>
-    <div class="aboutme">
+    <section class="info">
+      <div class="card">
         <h3>Nossa Missão</h3>
-        <p>Falar sobre a missão e para que serve esse site</p>
-    </div>
+        <p>
+          Ajudar estudantes a organizar a rotina, acompanhar metas e manter a
+          constância, um passo de cada vez.
+        </p>
+      </div>
 
-    <div class="contact">
-        <h2>Contato</h2>
-
-    </div>
+      <div class="card">
+        <h3>Contato</h3>
+        <p>seu-email@exemplo.com</p>
+        <p>github.com/seu-usuario</p>
+      </div>
+    </section>
+  </div>
 </template>
 
-<style>
-.home {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
+<script setup>
+const features = [
+  { title: 'Matérias', text: 'Cadastre e organize suas matérias', icon: 'pi-book', to: '/materias' },
+  { title: 'Sessões', text: 'Registre seu tempo de estudo', icon: 'pi-clock', to: '/sessoes' },
+  { title: 'Metas', text: 'Defina e acompanhe seus objetivos', icon: 'pi-lightbulb', to: '/metas' },
+  { title: 'Dashboard', text: 'Visualize seu progresso semanal', icon: 'pi-chart-bar', to: '/dashboard' },
+]
+</script>
 
+<style scoped>
 .hero {
-    text-align: center;
-    margin-bottom: 3rem;
-
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--sand), #F3E4DC);
+  border-radius: var(--radius);
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: var(--color1);
-    margin-bottom: 1rem;
+.hero h1 {
+  font-size: 2.6rem;
+  color: var(--burgundy);
+  margin-bottom: .75rem;
 }
 
 .hero p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    background: var(--color1);
-    color: var(--text-light);
-    padding: 0.75rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-
-.btn:hover {
-    background: var(--color2);
+  color: #5C4743;
+  font-size: 1.1rem;
+  margin-bottom: 1.75rem;
 }
 
 .cards {
-    display: grid;
-    padding: 3rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.card {
-    background: var(--color3);
-    border: 2px solid var(--color1);
-    border-radius: 12px;
-    padding: 1rem;
-    text-align: center;
-    transition: border-color 0.2s;
+.feature {
+  text-align: center;
+  transition: transform .2s, border-color .2s;
 }
+.feature:hover { transform: translateY(-3px); border-color: var(--rose); }
 
-.card:hover {
-    border-color: var(--color1);
+.icon-box {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto .75rem;
+  border-radius: 14px;
+  background: #F0DEDA;
+  display: grid;
+  place-items: center;
 }
+.icon-box i { font-size: 1.5rem; color: var(--burgundy); }
 
-.icon {
-    font-size: 2rem;
-}
+.feature p { font-size: .9rem; }
 
-.card h3 {
-    color: var(--text-light);
-    margin: 0.75rem 0 0.5rem;
-}
-
-.card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
 }
 </style>
