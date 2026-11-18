@@ -1,9 +1,12 @@
 :root{
-  --color1:#791a78;
-  --color2:#5b145a;
-  --color3:#3c0d3c;
-  --color4:#1e071e;
-  --color5:#000000;
+  --color1:#111a33; /*fundo*/
+  --color2:#0b1020; /*fundo*/
+  --color3:#161f3a; /*fundo*/
+  --color4:#2a3558; /*fundo*/
+  --color5:#e6ebf5; /*fundo*/
+  --color6:#9aa6c4; /*fundo*/
+  --color7:#4f8cff; /*fundo*/
+  --color8:#7aa7ff; /*fundo*/
 
   --text-light:#f5e6f5;
   --text-muted: #c9a8c9;  
