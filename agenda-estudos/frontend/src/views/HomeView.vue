@@ -2,8 +2,8 @@
   <div class="home">
     <section class="hero">
       <h1>Agenda de Estudos</h1>
-      <p>Organize seus estudos de forma simples e eficiente.</p>
-      <RouterLink to="/materias" class="btn">Ver Matérias</RouterLink>
+      <p>Entre e organize seus estudos de forma simples e eficiente.</p>
+      <RouterLink to="/entrar" class="btn"> Entre ou Cadastre-se </RouterLink>
     </section>
 
     <section class="cards">
@@ -25,8 +25,8 @@
 
       <div class="card">
         <h3>Contato</h3>
-        <p>seu-email@exemplo.com</p>
-        <p>github.com/seu-usuario</p>
+        <p>gabr1.profissional@gmail.com</p>
+        <p>https://github.com/gabrielaguedes12</p>
       </div>
     </section>
   </div>
