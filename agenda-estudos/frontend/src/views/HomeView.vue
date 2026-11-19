@@ -29,6 +29,12 @@
       </div>
     </section>
   </div>
+
+  <div>
+    <p>foto perfil</p>
+    <h2>criar logica de ainda não entrou? botão entre ou cadastre-se. Entrou? editar perfil e botão sair</h2>
+    <p>calendario-vazio sem login, com marcações com login</p>
+  </div>
 </template>
 
 <script setup>
@@ -39,6 +45,7 @@ const features = [
   { title: 'Dashboard', text: 'Visualize seu progresso semanal', icon: 'pi-chart-bar', to: '/dashboard' },
 ]
 </script>
+
 
 <style scoped>
 .hero {

@@ -8,7 +8,6 @@
   </div>
 </template>
 
-
 <style>
 .card_sessoes {
   background: var(--card);
