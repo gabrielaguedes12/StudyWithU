@@ -6,9 +6,9 @@ const route = useRoute()
 
 const links = [
   { to: '/', label: 'Início', icon: 'pi-home' },
+  { to: '/metas', label: 'Metas', icon: 'pi-lightbulb' },
   { to: '/materias', label: 'Matérias', icon: 'pi-book' },
   { to: '/sessoes', label: 'Sessões', icon: 'pi-clock' },
-  { to: '/metas', label: 'Metas', icon: 'pi-lightbulb' },
   { to: '/dashboard', label: 'Dashboard', icon: 'pi-chart-bar' },
 ]
 

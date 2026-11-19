@@ -8,12 +8,12 @@
   <div>
     <h3>Matérias</h3>
     <button class="button_invisible">Tudo</button>
-    <div>
+    <div class="cards_scroll">
       <p>cards de cada materia com nome, data, descrição, meta de pomodoros e quantos concluidos</p>
     </div>
   </div>
 
-  <div>
-    <p>tabela de materia vinculado ao destaque e progresso (feito, andamento, não iniciado)*/</p>
+  <div class="general_table">
+    <p>tabela de materia vinculado ao destaque e progresso (feito, andamento, não iniciado)</p>
   </div>
 </template>

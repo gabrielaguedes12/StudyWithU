@@ -32,16 +32,16 @@
 
   <div>
     <p>foto perfil</p>
-    <h2>criar logica de ainda não entrou? botão entre ou cadastre-se. Entrou? editar perfil e botão sair</h2>
+    <h3>criar logica de ainda não entrou? botão entre ou cadastre-se. Entrou? editar perfil e botão sair</h3>
     <p>calendario-vazio sem login, com marcações com login</p>
   </div>
 </template>
 
 <script setup>
 const features = [
+  { title: 'Metas', text: 'Defina e acompanhe seus objetivos', icon: 'pi-lightbulb', to: '/metas' },
   { title: 'Matérias', text: 'Cadastre e organize suas matérias', icon: 'pi-book', to: '/materias' },
   { title: 'Sessões', text: 'Registre seu tempo de estudo', icon: 'pi-clock', to: '/sessoes' },
-  { title: 'Metas', text: 'Defina e acompanhe seus objetivos', icon: 'pi-lightbulb', to: '/metas' },
   { title: 'Dashboard', text: 'Visualize seu progresso semanal', icon: 'pi-chart-bar', to: '/dashboard' },
 ]
 </script>
