@@ -18,8 +18,8 @@
       <p>Data de finalização</p>
       <label for="date">dd/mm/aaaa</label>
 
-      <p>Descrição</p>
-      <label for="descricao">Conte mais sobre sua meta...</label>
+      <h3>Descrição</h3>
+      <label for="descricao"></label>
       <textarea name="" id="descricao"  placeholder="Conte mais sobre sua meta..." rows="3"></textarea>
 
       <p>Grau de Importância</p>
