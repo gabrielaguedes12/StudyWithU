@@ -3,7 +3,6 @@
     <section class="hero">
       <h1>Agenda de Estudos</h1>
       <p>Entre e organize seus estudos de forma simples e eficiente.</p>
-      <RouterLink to="/entrar" class="btn"> Entre ou Cadastre-se </RouterLink>
     </section>
 
     <section class="cards">

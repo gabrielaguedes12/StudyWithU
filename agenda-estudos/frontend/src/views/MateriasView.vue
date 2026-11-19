@@ -13,12 +13,20 @@
     </div>
   </div>
 
-  /*tabela de materia vinculado ao destaque e progresso (feito, andamento, não iniciado)*/
   <div>
+    <p>tabela de materia vinculado ao destaque e progresso (feito, andamento, não iniciado)*/</p>
+  </div>
 
+  <div class="template_right">
     <div>
       <p>perfil</p>
-      <p>calendario</p>
+      <button>Editar perfil</button>
+      <button>Sair</button>
+      <div>
+        <p>calendario</p>
+      </div>
     </div>
   </div>
+
+
 </template>
