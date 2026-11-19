@@ -19,9 +19,8 @@
       <label for="date">dd/mm/aaaa</label>
 
       <p>Descrição</p>
-      <input type="text">
-      <label for="text">Conte mais sobre sua meta...</label>
-      </input>
+      <label for="descricao">Conte mais sobre sua meta...</label>
+      <textarea name="" id="descricao"  placeholder="Conte mais sobre sua meta..." rows="3"></textarea>
 
       <p>Grau de Importância</p>
       <option value="">Alto</option>
