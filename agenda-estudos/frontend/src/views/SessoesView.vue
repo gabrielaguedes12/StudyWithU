@@ -1,10 +1,13 @@
 <template>
   <div class="card_sessoes">
-    <h3>Sessões</h3>
-    <p>Em construção.</p>
+        <p>Cronometro</p>
+        <p>pegar uma meta como concurso</p>
+        <p>dentro de concurso escolher a materia e colocar quantos pomodoros</p>
+        
+        <button>">"</button>
   </div>
 </template>
-
+<style>
 .card_sessoes {
   background: var(--card);
   border: 1px solid var(--border);
@@ -12,3 +15,4 @@
   box-shadow: var(--shadow);
   padding: 1.25rem;
 }
+</style>
