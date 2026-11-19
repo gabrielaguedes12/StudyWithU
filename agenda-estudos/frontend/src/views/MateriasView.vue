@@ -1,6 +1,24 @@
 <template>
   <div class="card">
+    <h3>Bem-Vindo(a), {nome}!</h3>
+    <p>Nesse espaço você poderá criar matérias, interligar com as suas metas e acompanhar seu progresso!</p>
+    <button>Adicionar</button>
+  </div>
+
+  <div>
     <h3>Matérias</h3>
-    <p>Em construção.</p>
+    <button>Tudo</button>
+    <div>
+      <p>cards de cada materia com nome, data, descrição, meta de pomodoros e quantos concluidos</p>
+    </div>
+  </div>
+
+  /*tabela de materia vinculado ao destaque e progresso (feito, andamento, não iniciado)*/
+  <div>
+
+    <div>
+      <p>perfil</p>
+      <p>calendario</p>
+    </div>
   </div>
 </template>

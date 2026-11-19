@@ -1,10 +1,10 @@
 <template>
   <div class="card_sessoes">
-        <p>Cronometro</p>
+        <p>Cronometro redondo</p>
         <p>pegar uma meta como concurso</p>
         <p>dentro de concurso escolher a materia e colocar quantos pomodoros</p>
         
-        <button>">"</button>
+        <button>Começar</button>
   </div>
 </template>
 <style>
