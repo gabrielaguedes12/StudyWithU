@@ -1,10 +1,14 @@
 <template>
-  <section>
-    <div class="title_page">
-      <h1>Metas</h1>
-      <h2>defina seus objetivos e acompanhe seu progresso!</h2>
-    </div>
+  <section class="metas-page">
+    <header class="title-page">
+      <i class="pi pi-bullseye"></i>
+      <div>
+        <h1>Metas</h1>
+        <p>defina seus objetivos e acompanhe seu progresso!</p>
+      </div>
+    </header>
 
+    
     <div class="forms_meta">
       <h3>Criar meta</h3>
       <p>Organize seus objetivos em um só lugar!</p>
@@ -12,9 +16,8 @@
       <form>
         <div>
           <label for="text">Título da meta *</label>
-          <input id="titulo" type="text"  placeholder="Ex: Estudar para o concurso" required>
+          <input id="titulo" type="text" placeholder="Ex: Estudar para o concurso" required>
         </div>
-      </form>
 
         <p>Data de inicio*</p>
         <label for="date">dd/mm/aaaa</label>
@@ -35,6 +38,7 @@
         <label for="number">Ex.: 100</label>
 
         <button>+ Criar Meta</button>
+      </form>
     </div>
   </section>
 
