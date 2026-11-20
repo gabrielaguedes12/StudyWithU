@@ -9,28 +9,32 @@
       <h3>Criar meta</h3>
       <p>Organize seus objetivos em um só lugar!</p>
 
-      <p>Título da meta*</p>
-      <label for="text">Ex: Estudar para o concurso</label>
+      <form>
+        <div>
+          <label for="text">Título da meta *</label>
+          <input id="titulo" type="text"  placeholder="Ex: Estudar para o concurso" required>
+        </div>
+      </form>
 
-      <p>Data de inicio*</p>
-      <label for="date">dd/mm/aaaa</label>
+        <p>Data de inicio*</p>
+        <label for="date">dd/mm/aaaa</label>
 
-      <p>Data de finalização</p>
-      <label for="date">dd/mm/aaaa</label>
+        <p>Data de finalização</p>
+        <label for="date">dd/mm/aaaa</label>
 
-      <h3>Descrição</h3>
-      <label for="descricao"></label>
-      <textarea name="" id="descricao"  placeholder="Conte mais sobre sua meta..." rows="3"></textarea>
+        <h3>Descrição</h3>
+        <label for="descricao"></label>
+        <textarea name="" id="descricao" placeholder="Conte mais sobre sua meta..." rows="3"></textarea>
 
-      <p>Grau de Importância</p>
-      <option value="">Alto</option>
-      <option value="">Médio</option>
-      <option value="">Baixo</option>
+        <p>Grau de Importância</p>
+        <option value="">Alto</option>
+        <option value="">Médio</option>
+        <option value="">Baixo</option>
 
-      <p>Meta de Tempo Gasto</p>
-      <label for="number">Ex.: 100</label>
+        <p>Meta de Tempo Gasto</p>
+        <label for="number">Ex.: 100</label>
 
-      <button>+ Criar Meta</button>
+        <button>+ Criar Meta</button>
     </div>
   </section>
 
