@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import  TagImportancia  from '@/constants/ui/TagImportancia.vue'
+import TagImportancia from '@/components/ui/TagImportancia.vue'
 
 const props = defineProps({ nivel: { type: String, required: true } })
 const info = computed(() => IMPORTANCIAS[props.nivel])
