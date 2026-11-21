@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useMetaStore = defineStore('metas', () => {
+export const useMetasStore = defineStore('metas', () => {
     const metas = ref([
         { id: 1, titulo: 'Estudar para o Concurso', inicio: '2026-11-01', fim: '2026-11-30', importancia: 'alta', horasMeta: 100, horasFeitas: 70 },
         { id: 2, titulo: 'Aprender React', inicio: '', fim: '', importancia: 'media', horasMeta: 50, horasFeitas: 20 },
