@@ -1,49 +1,23 @@
 <script setup>
-import { computed } from 'vue'
-import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router';
+import Sidebar from '@/components/layout/Sidebar.vue'
+import RightPanel from './components/layout/RightPanel.vue';
 
 const route = useRoute()
-
-const links = [
-  { to: '/', label: 'Início', icon: 'pi-home' },
-  { to: '/metas', label: 'Metas', icon: 'pi-lightbulb' },
-  { to: '/materias', label: 'Matérias', icon: 'pi-book' },
-  { to: '/sessoes', label: 'Sessões', icon: 'pi-clock' },
-  { to: '/dashboard', label: 'Dashboard', icon: 'pi-chart-bar' },
-]
-
-const titulo = computed(
-  () => links.find((l) => l.to === route.path)?.label ?? 'StudyWithU'
-)
 </script>
 
 <template>
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="brand">
-        <i class="pi pi-graduation-cap"></i>
-        <h1>StudyWithU</h1>
-        <small>Agenda de estudos</small>
-      </div>
-
-      <nav class="menu">
-        <RouterLink v-for="l in links" :key="l.to" :to="l.to" class="menu-item">
-          <i :class="['pi', l.icon]"></i>
-          {{ l.label }}
-        </RouterLink>
-      </nav>
-    </aside>
-
+  <RouterView v-if="route.meta.semLayout" />
+  <div v-else class="layout">
+    <Sidebar />
     <div class="content">
-      <header class="topbar">
-        <h2>{{ titulo }}</h2>
-      </header>
-
-      <main class="page">
-        <RouterView />
-      </main>
-
-      <footer class="footer">© 2026 StudyWithU · Feito com 🤎 para estudantes</footer>
+      <div class="workspace">
+        <main class="page">
+          <RouterView />
+        </main>
+        <RightPanel/>
+      </div>
+      <footer class="footer">© 2026 StudyWithU · Feito com 🤎 para seus planos</footer>
     </div>
   </div>
 </template>

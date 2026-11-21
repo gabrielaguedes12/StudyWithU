@@ -6,9 +6,7 @@ import { useMetasStore } from '@/stores/metasStore'
 const store = useMetasStore()
 </script>
 
-<template>
-  <MetaForm @criar="store.adicionar" />
-
+<template>  
   <section class="metas-page">
     <header class="title-page">
       <i class="pi pi-bullseye"></i>
@@ -17,9 +15,11 @@ const store = useMetasStore()
         <p>defina seus objetivos e acompanhe seu progresso!</p>
       </div>
     </header>
+    
+    <MetaForm @criar="store.adicionar" />
 
-
-    <div class="forms_meta">
+    <div class="card">
+      
       <h3>Criar meta</h3>
       <p>Organize seus objetivos em um só lugar!</p>
 
