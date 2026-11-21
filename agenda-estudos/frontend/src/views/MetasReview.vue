@@ -1,4 +1,14 @@
+<script setup>
+import MetaForm from '@/components/metas/MetaForm.vue'
+import MetaCard from '@/components/metas/MetaCard.vue'
+import { useMetasStore } from '@/stores/metasStore'
+
+const store = useMetasStore()
+</script>
+
 <template>
+  <MetaForm @criar="store.adicionar" />
+
   <section class="metas-page">
     <header class="title-page">
       <i class="pi pi-bullseye"></i>
@@ -8,7 +18,7 @@
       </div>
     </header>
 
-    
+
     <div class="forms_meta">
       <h3>Criar meta</h3>
       <p>Organize seus objetivos em um só lugar!</p>
@@ -48,5 +58,6 @@
       <button>Ver todas --> </button>
     </div>
   </section>
-
+  <p v-if="!store.metas.length" class="vazio">Você ainda não tem metas. Crie a primeira acima! 🎯</p>
+  <MetaCard v-for="m in store.metas" :key="m.id" :meta="m" @excluir="store.remover" />
 </template>
